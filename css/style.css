@@ -1,0 +1,298 @@
+/* color variables for easier to remember names */
+:root {
+    --dark-blue: #17285c;
+    --light-blue: #80A3D5;
+    --green: #006400;
+}
+
+/* remove default CSS styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* general settings for all body styling */
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    color: var(--dark-blue);
+    background-color: var(--light-blue);
+}
+
+/* header styling start */
+header {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 25px;
+}
+
+header h1 {
+    color: var(--green);
+    font-size: 38px;
+    font-weight: bold;
+    background-color: var(--light-blue);
+    padding: 15px;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--light-blue);
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+}
+
+header nav {
+    margin: 22px;
+}
+
+header nav ul li a {
+    padding: 7px;
+    font-size: 26px;
+    margin: 18px 18px 0 0;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url("../images/main_background.jpg");
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.hero img {
+    margin: auto;
+    float: right;
+    height: 150px;
+}
+
+.title {
+    min-height: 100%;
+    text-align: right;
+    padding-right: 45px;
+    min-width: 20%;
+    max-width: 20%;
+}
+
+.title h2 {
+    font-size: 48px;
+}
+
+/* about me section styling start */
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding-top: 30px;
+}
+
+.about p {
+    font-size: 20px;
+    padding: 0 30px;
+    line-height: 1.6;
+    width: 90%;
+}
+
+/* my projects section styling start */
+.my-projects {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--dark-blue);
+}
+
+.my-projects h2 {
+    text-align: center;
+    padding: 25px;
+    color: var(--light-blue);
+}
+
+.projects-grid-wrapper {
+    width: 80%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.projects-grid {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.project {
+    border: solid;
+    color: black;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-decoration: none;
+    background-size: cover;
+    background-position: center;
+}
+
+.run-buddy {
+    background-image: url("../images/hero-bg.jpg");
+    grid-column: 1/3;
+    grid-row: span 2;
+}
+
+.robot-gladiators {
+    background-image: url("../images/robots_fighting.jpg");
+}
+
+.project3 {
+    background-image: url("../images/calculator.jpg");
+}
+
+.project4 {
+    background-image: url("../images/gears.jpg");
+}
+
+.project5 {
+    background-image: url("../images/math.jpg");
+}
+
+.project6 {
+    background-image: url("../images/trees.png");
+}
+.project7 {
+    background-image: url("../images/ocean.png");
+}
+.project-label {
+    background-color: lightgray;;
+    color: var(--dark-blue);
+    padding: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    margin-bottom: 30px;
+}
+
+.content {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-holder {
+    width: 60%;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+footer ul li {
+    font-weight: bold;
+
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: var(--dark-blue);
+    padding: 8px;
+    font-weight: bold;
+}
+
+/* MEDIA QUERY FOR TABLET SCREENS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+    .title h2 {
+        font-size: 35px;
+    }
+
+    .about p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+/* MEDIA QUERY FOR MOBILE PHONE SCREENS AND SMALLER */
+@media screen and (max-width: 575px) {
+    header {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    header nav ul {
+        min-height: 80px;
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .title {
+        border-right: none;
+        text-align: center;
+        min-width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .about p {
+        font-size: 16px;
+        line-height: 1.6;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .my-projects {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .projects-grid-wrapper {
+        width: 100%;
+        padding: 10px;
+    }
+    
+    .projects-grid {
+        width: 80%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer ul {
+        flex-direction: column;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    footer ul li {
+        padding: 10px;
+        text-align: center;
+    }
+    
+}
