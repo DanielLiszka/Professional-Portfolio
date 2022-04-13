@@ -152,23 +152,29 @@ header nav ul li a {
     background-image: url("../images/robots_fighting.jpg");
 }
 
-.project3 {
-    background-image: url("../images/calculator.jpg");
+.taskmaster-pro {
+    background-image: url("../images/taskboard-smartpedia.jpg");
 }
 
-.project4 {
-    background-image: url("../images/gears.jpg");
+.coding-quiz {
+    background-image: url("../images/quiz.jpg");
 }
 
-.project5 {
-    background-image: url("../images/math.jpg");
+.git-it-done {
+    background-image: url("../images/git.png");
 }
 
-.project6 {
-    background-image: url("../images/trees.png");
+.Weekday-Work-Scheduler {
+    background-image: url("../images/work-calender.jpg");
 }
-.project7 {
-    background-image: url("../images/ocean.png");
+.Weather {
+    background-image: url("../images/weather.jpg");
+}
+.brewery {
+    background-image: url("../images/brewery.png");
+}
+.Password-Generator {
+    background-image: url("../images/password.jpg");
 }
 .project-label {
     background-color: lightgray;;
