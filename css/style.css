@@ -85,6 +85,7 @@ header nav ul li a {
 
 .title h2 {
     font-size: 48px;
+    text-align: center;
 }
 
 /* about me section styling start */
@@ -93,6 +94,10 @@ header nav ul li a {
     justify-content: space-between;
     align-items: stretch;
     padding-top: 30px;
+}
+.about h2 {
+    display: flex;
+    text-align: center;
 }
 
 .about p {
