@@ -95,6 +95,7 @@ header nav ul li a {
     align-items: stretch;
     padding-top: 30px;
 }
+
 .about h2 {
     display: flex;
     text-align: center;
@@ -172,17 +173,26 @@ header nav ul li a {
 .Weekday-Work-Scheduler {
     background-image: url("../images/work-calender.jpg");
 }
+
 .Weather {
     background-image: url("../images/weather.jpg");
 }
+
 .brewery {
     background-image: url("../images/brewery.png");
 }
+
+.career {
+    background-image: url("../images/career.png");
+}
+
 .Password-Generator {
     background-image: url("../images/password.jpg");
 }
+
 .project-label {
-    background-color: lightgray;;
+    background-color: lightgray;
+    ;
     color: var(--dark-blue);
     padding: 10px;
 }
@@ -284,7 +294,7 @@ footer ul li a {
         width: 100%;
         padding: 10px;
     }
-    
+
     .projects-grid {
         width: 80%;
     }
@@ -305,5 +315,5 @@ footer ul li a {
         padding: 10px;
         text-align: center;
     }
-    
+
 }
